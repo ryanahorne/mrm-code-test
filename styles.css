@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', Arial, Sans-serif;
+    font-size: 16px;
+  }
+
+  .main {
+    position: relative;
+  }
+  
+  ul { list-style-type: none; }
+  
+  a {
+    color: #b63b4d;
+    text-decoration: none;
+  }
+  
+  
+  h1 {
+    font-weight: 700;
+    text-align: center;
+    margin: 80px auto 24px;
+  }
+
+  p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+  }
+
+  .header {
+    padding:48px 24px;
+    color: #ffffff;
+    background: #007EA7;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+  .header a {
+      color: #ffffff;
+      font-weight: 600;
+  }
+  
+  .accordion {
+    width: 100%;
+    max-width: 1280px;
+    margin: 48px auto;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 4px;
+  }
+
+  .accordion li { margin: 24px; }
+
+  .accordion li:nth-of-type(odd) {
+    background: #eeeeee;
+    border-radius: 4px;
+  }
+
+  .accordion li:nth-of-type(even) {
+    background: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .accordion .item {
+    cursor: pointer;
+    display: block;
+    padding: 60px 0;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  .accordion li i {
+    font-size: 18px;
+    color: #4a4a4a;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .accordion li i.fa-chevron-down {
+    margin-left: 16px;
+    font-size: 16px;
+  }
+  
+  .accordion li.open .item { color: #007EA7; }
+  
+  .accordion li.open i { color: #007EA7; }
+  
+  .accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .details {
+    display: none;
+    font-size: 13px;
+    text-align: center;
+    padding: 0 0 48px;
+  }
